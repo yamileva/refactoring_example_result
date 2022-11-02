@@ -40,7 +40,7 @@ namespace Testrefactoring
 			string result = customer.statement();
 			Assert::AreEqual(expected, result);
 		}
-		TEST_METHOD(customer_all_reg_more_2)
+		TEST_METHOD(all_reg_more_2)
 		{
 			setlocale(LC_ALL, "Russian");
 			Customer customer = { "Customer" };
@@ -58,7 +58,7 @@ namespace Testrefactoring
 			Assert::AreEqual(expected, result);
 		}
 		
-		TEST_METHOD(customer_all_new_less_2)
+		TEST_METHOD(all_new_less_2)
 		{
 			setlocale(LC_ALL, "Russian");
 			Customer customer = { "Customer" };
@@ -73,7 +73,7 @@ namespace Testrefactoring
 			string result = customer.statement();
 			Assert::AreEqual(expected, result);
 		}
-		TEST_METHOD(customer_all_new_mixed)
+		TEST_METHOD(all_new_mixed)
 		{
 			setlocale(LC_ALL, "Russian");
 			Customer customer = { "Customer" };
@@ -90,7 +90,7 @@ namespace Testrefactoring
 			string result = customer.statement();
 			Assert::AreEqual(expected, result);
 		}
-		TEST_METHOD(customer_all_children_no_more_3)
+		TEST_METHOD(all_children_no_more_3)
 		{
 			setlocale(LC_ALL, "Russian");
 			Customer customer = { "Customer" };
@@ -107,7 +107,7 @@ namespace Testrefactoring
 			string result = customer.statement();
 			Assert::AreEqual(expected, result);
 		}
-		TEST_METHOD(customer_all_children_more_3)
+		TEST_METHOD(all_children_more_3)
 		{
 			setlocale(LC_ALL, "Russian");
 			Customer customer = { "Customer" };
@@ -124,7 +124,7 @@ namespace Testrefactoring
 			string result = customer.statement();
 			Assert::AreEqual(expected, result);
 		}
-		TEST_METHOD(customer_single_reg_less_2)
+		TEST_METHOD(single_reg_less_2)
 		{
 			setlocale(LC_ALL, "Russian");
 			Customer customer = { "Customer" };
@@ -136,7 +136,7 @@ namespace Testrefactoring
 			string result = customer.statement();
 			Assert::AreEqual(expected, result);
 		}
-		TEST_METHOD(customer_single_reg_2)
+		TEST_METHOD(single_reg_2)
 		{
 			setlocale(LC_ALL, "Russian");
 			Customer customer = { "Customer" };
@@ -148,7 +148,7 @@ namespace Testrefactoring
 			string result = customer.statement();
 			Assert::AreEqual(expected, result);
 		}
-		TEST_METHOD(customer_single_reg_more_2)
+		TEST_METHOD(single_reg_more_2)
 		{
 			setlocale(LC_ALL, "Russian");
 			Customer customer = { "Customer" };
@@ -160,7 +160,7 @@ namespace Testrefactoring
 			string result = customer.statement();
 			Assert::AreEqual(expected, result);
 		}
-		TEST_METHOD(customer_single_new_less_2)
+		TEST_METHOD(single_new_less_2)
 		{
 			setlocale(LC_ALL, "Russian");
 			Customer customer = { "Customer" };
@@ -172,7 +172,7 @@ namespace Testrefactoring
 			string result = customer.statement();
 			Assert::AreEqual(expected, result);
 		}
-		TEST_METHOD(customer_single_new_2)
+		TEST_METHOD(single_new_2)
 		{
 			setlocale(LC_ALL, "Russian");
 			Customer customer = { "Customer" };
@@ -184,7 +184,7 @@ namespace Testrefactoring
 			string result = customer.statement();
 			Assert::AreEqual(expected, result);
 		}
-		TEST_METHOD(customer_single_new_more_2)
+		TEST_METHOD(single_new_more_2)
 		{
 			setlocale(LC_ALL, "Russian");
 			Customer customer = { "Customer" };
@@ -196,7 +196,7 @@ namespace Testrefactoring
 			string result = customer.statement();
 			Assert::AreEqual(expected, result);
 		}
-		TEST_METHOD(customer_single_child_less_3)
+		TEST_METHOD(single_child_less_3)
 		{
 			setlocale(LC_ALL, "Russian");
 			Customer customer = { "Customer" };
@@ -208,7 +208,7 @@ namespace Testrefactoring
 			string result = customer.statement();
 			Assert::AreEqual(expected, result);
 		}
-		TEST_METHOD(customer_single_child_3)
+		TEST_METHOD(single_child_3)
 		{
 			setlocale(LC_ALL, "Russian");
 			Customer customer = { "Customer" };
@@ -220,7 +220,7 @@ namespace Testrefactoring
 			string result = customer.statement();
 			Assert::AreEqual(expected, result);
 		}
-		TEST_METHOD(customer_single_child_more_3)
+		TEST_METHOD(single_child_more_3)
 		{
 			setlocale(LC_ALL, "Russian");
 			Customer customer = { "Customer" };
@@ -232,7 +232,7 @@ namespace Testrefactoring
 			string result = customer.statement();
 			Assert::AreEqual(expected, result);
 		}
-		TEST_METHOD(custumer_empty)
+		TEST_METHOD(empty)
 		{
 			setlocale(LC_ALL, "Russian");
 			Customer customer = { "Customer" };
