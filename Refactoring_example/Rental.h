@@ -20,5 +20,6 @@ public:
 		return _movie;
 	}
 	double getCharge();
+	int getBonus();
 };
 

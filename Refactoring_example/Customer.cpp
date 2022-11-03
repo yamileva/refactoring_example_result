@@ -8,13 +8,7 @@ string Customer::statement() {
 	for (auto& each : _rentals) {
 		double thisAmount = each.getCharge();
 
-		// Начисление бонусных очков
-		frequentRenterPoints++;
-
-		// Бонус за двухдневный прокат новинки
-		if ((each.getMovie().getPriceCode() == Movie::NEW_RELEASE) &&
-			each.getDaysRented() > 1)
-			frequentRenterPoints++;
+		frequentRenterPoints += each.getBonus();
 
 		// Вывод результатов для каждого проката
 		result += "\t" + each.getMovie().getTitle() + "\t" +
@@ -29,5 +23,6 @@ string Customer::statement() {
 		" бонусных очков";
 	return result;
 }
+
 
 
