@@ -19,5 +19,6 @@ public:
 	Movie getMovie() {
 		return _movie;
 	}
+	double getCharge();
 };
 

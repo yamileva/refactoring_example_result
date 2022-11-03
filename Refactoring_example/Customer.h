@@ -22,7 +22,6 @@ public:
 	}
 	string statement();
 
-	double amountFor(Rental each);
 
 };
 
