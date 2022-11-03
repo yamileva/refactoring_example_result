@@ -30,26 +30,26 @@ string Customer::statement() {
 	return result;
 }
 
-double Customer::amountFor(Rental each)
+double Customer::amountFor(Rental aRental)
 {
-	double thisAmount = 0;
-	switch (each.getMovie().getPriceCode()) {
+	double result = 0;
+	switch (aRental.getMovie().getPriceCode()) {
 	case Movie::REGULAR:
-		thisAmount += 2;
+		result += 2;
 
-		if (each.getDaysRented() > 2)
-			thisAmount += (each.getDaysRented() - 2) * 1.5;
+		if (aRental.getDaysRented() > 2)
+			result += (aRental.getDaysRented() - 2) * 1.5;
 		break;
 
 	case Movie::NEW_RELEASE:
-		thisAmount += each.getDaysRented() * 3;
+		result += aRental.getDaysRented() * 3;
 		break;
 
 	case Movie::CHILDREN:
-		thisAmount += 1.5;
-		if (each.getDaysRented() > 3)
-			thisAmount += (each.getDaysRented() - 3) * 1.5;
+		result += 1.5;
+		if (aRental.getDaysRented() > 3)
+			result += (aRental.getDaysRented() - 3) * 1.5;
 		break;
 	}
-	return thisAmount;
+	return result;
 }
