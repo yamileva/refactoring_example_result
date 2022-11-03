@@ -22,7 +22,9 @@ public:
 	}
 	string statement();
 
+	double getTotalCharge();
 
+	int getTotalBonus();
 
 };
 
