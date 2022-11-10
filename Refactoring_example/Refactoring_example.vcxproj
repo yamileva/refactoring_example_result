@@ -151,15 +151,27 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ChildrenPrice.cpp" />
     <ClCompile Include="Customer.cpp" />
     <ClCompile Include="Movie.cpp" />
+    <ClCompile Include="NewReleasePrice.cpp" />
+    <ClCompile Include="Price.cpp" />
     <ClCompile Include="Refactoring_example.cpp" />
+    <ClCompile Include="RegularPrice.cpp" />
     <ClCompile Include="Rental.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ChildrenPrice.h" />
     <ClInclude Include="Customer.h" />
     <ClInclude Include="Movie.h" />
+    <ClInclude Include="NewReleasePrice.h" />
+    <ClInclude Include="Price.h" />
+    <ClInclude Include="RegularPrice.h" />
     <ClInclude Include="Rental.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Refactoring_example.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
