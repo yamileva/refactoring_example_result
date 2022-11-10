@@ -16,7 +16,6 @@ double NewReleasePrice::getCharge(int daysRented)
 
 int NewReleasePrice::getBonus(int daysRented)
 {
-	// Начисление бонусных очков
 	int bonusPoints = Price::getBonus(daysRented);
 
 	// Бонус за двухдневный прокат новинки
