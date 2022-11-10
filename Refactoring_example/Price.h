@@ -6,5 +6,7 @@ public:
 
 	virtual double getCharge(int daysRented) = 0;
 
+	virtual int getBonus(int daysRented);
+
 };
 

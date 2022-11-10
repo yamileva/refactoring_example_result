@@ -60,5 +60,9 @@ public:
 		return _price->getCharge(daysRented);
 	}
 
+	int getBonus(int daysRented)
+	{
+		return _price->getBonus(daysRented);
+	}
 };
 
