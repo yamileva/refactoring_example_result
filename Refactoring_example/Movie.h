@@ -16,12 +16,12 @@ private:
 public:
 	Movie() {
 		_title = "";
-		_priceCode = 0;
+		setPriceCode(0);
 	}
 
 	Movie(string title, int priceCode){
 		_title = title;
-		_priceCode = priceCode;
+		setPriceCode(priceCode);
 	}
 
 	int getPriceCode() {
